@@ -253,3 +253,104 @@ function filterNews(){
     document.getElementById("news").innerHTML = html;
 
 }
+let slides = [
+
+{
+title:"🚀 TechVerse",
+text:"دنیای تکنولوژی، هوش مصنوعی و امنیت سایبری"
+},
+
+{
+title:"🤖 AI News",
+text:"جدیدترین اخبار هوش مصنوعی را دنبال کن."
+},
+
+{
+title:"🎮 Gaming",
+text:"آخرین اخبار بازی‌های روز دنیا."
+},
+
+{
+title:"🛡️ Cyber Security",
+text:"آموزش امنیت و هک اخلاقی."
+}
+
+];
+
+let currentSlide = 0;
+
+function changeHero(){
+
+currentSlide++;
+
+if(currentSlide>=slides.length){
+
+currentSlide=0;
+
+}
+
+document.getElementById("hero-title").innerText =
+slides[currentSlide].title;
+
+document.getElementById("hero-text").innerText =
+slides[currentSlide].text;
+
+}
+
+setInterval(changeHero,4000);
+tsParticles.load("particles",{
+
+background:{
+color:"#0f172a"
+},
+
+particles:{
+
+number:{
+value:80
+},
+
+color:{
+value:"#38bdf8"
+},
+
+links:{
+enable:true,
+distance:150,
+color:"#38bdf8"
+},
+
+move:{
+enable:true,
+speed:2
+}
+
+}
+
+});
+tsParticles.load("particles", {
+    background: {
+        color: "#0f172a"
+    },
+
+    particles: {
+        number: {
+            value: 80
+        },
+
+        color: {
+            value: "#38bdf8"
+        },
+
+        links: {
+            enable: true,
+            distance: 150,
+            color: "#38bdf8"
+        },
+
+        move: {
+            enable: true,
+            speed: 2
+        }
+    }
+});

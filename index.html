@@ -16,18 +16,23 @@
 <hr>
 
 <h2>🚀 اخبار فضایی</h2>
-<input
-type="text"
-id="newsSearch"
-placeholder="🔍 جستجو در خبرها..."
-onkeyup="filterNews()">
-<button onclick="loadNews()">
-📰 دریافت اخبار
-</button>
+<div class="search-bar">
+    <img src="logo.png" class="logo" alt="TechVerse">
+
+    <input
+        type="text"
+        id="newsSearch"
+        placeholder="🔍 جستجو در خبرها..."
+    >
+
+    <button onclick="loadNews()">
+        📰 دریافت اخبار
+    </button>
+</div>
 
 <div id="news"></div>
 <body>
-
+<div id="particles"></div>
 <header>
     <nav>
         <a href="#">🏠 خانه</a>
@@ -45,7 +50,6 @@ onkeyup="filterNews()">
     id="search"
     placeholder="🔍 جستجو..."
     onkeyup="searchCards()">
-    <img src="images/logo.png" class="logo">
     <h1>🚀 TechVerse
 Explore the Future of Technology
 by TAHA</h1>
@@ -115,22 +119,15 @@ by TAHA</h1>
     </section>
 
 </main>
-
-<footer>
-    <p>© 2026 TAHA - تمامی حقوق محفوظ است.</p>
-</footer>
-
-<script src="script.js"></script>
-
 <section class="hero">
 
     <div class="hero-content">
 
-        <h1>🚀 TechVerse</h1>
+        <h1 id="hero-title">🚀 TechVerse</h1>
 
-        <p>
-        دنیای تکنولوژی، هوش مصنوعی و امنیت سایبری
-        </p>
+<p id="hero-text">
+دنیای تکنولوژی، هوش مصنوعی و امنیت سایبری
+</p>
 
         <button onclick="loadNews()">
             📰 آخرین اخبار
@@ -139,6 +136,11 @@ by TAHA</h1>
     </div>
 
 </section>
+<footer>
+    <p>© 2026 TAHA - تمامی حقوق محفوظ است.</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
