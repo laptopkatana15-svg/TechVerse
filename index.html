@@ -1,0 +1,127 @@
+<div class="container">
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechVerse</title>
+    <link rel="stylesheet" href="style.css">
+ <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">   
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<link rel="manifest" href="manifest.json">
+<hr>
+
+<h2>🚀 اخبار فضایی</h2>
+<input
+type="text"
+id="newsSearch"
+placeholder="🔍 جستجو در خبرها..."
+onkeyup="filterNews()">
+<button onclick="loadNews()">
+📰 دریافت اخبار
+</button>
+
+<div id="news"></div>
+<body>
+
+<header>
+    <nav>
+        <a href="#">🏠 خانه</a>
+        <a href="#">🤖 هوش مصنوعی</a>
+        <a href="#">🔐 امنیت</a>
+        <a href="#">🎮 بازی‌ها</a>
+        <a href="#">📞 تماس</a>
+    </nav>
+</header>
+
+<main>
+
+    <input
+    type="text"
+    id="search"
+    placeholder="🔍 جستجو..."
+    onkeyup="searchCards()">
+    <img src="images/logo.png" class="logo">
+    <h1>🚀 TechVerse
+Explore the Future of Technology
+by TAHA</h1>
+<h2 id="welcome"></h2>
+    <section class="info">
+        <h2>🕒 ساعت</h2>
+        <p id="clock">00:00:00</p>
+        <p id="date">تاریخ...</p>
+    </section>
+
+    <p id="fact">برای دیدن دانستنی کلیک کن.</p>
+
+    <section class="actions">
+        <button onclick="toggleMode()">🌙 / ☀️ تغییر حالت</button>
+        <button onclick="newFact()">🎲 دانستنی تصادفی</button>
+        <p id="fact">روی دکمه کلیک کن!</p>
+    </section>
+
+    <section class="cards">
+
+        <div class="card searchable">
+            <h2>💡 دانستنی امروز</h2>
+            <p>SSD چندین برابر سریع‌تر از HDD است.</p>
+        </div>
+
+        <div class="card searchable">
+            <h2>🤖 هوش مصنوعی</h2>
+            <p>هر روز یک آموزش جدید منتشر می‌شود.</p>
+        </div>
+
+        <div class="card searchable">
+            <h2>🔐 امنیت سایبری</h2>
+            <p>یاد بگیر چگونه از اطلاعاتت محافظت کنی.</p>
+        </div>
+
+        <div class="card searchable">
+            <h2>🎮 بازی هفته</h2>
+            <p>Ghost of Tsushima</p>
+        </div>
+
+        <hr>
+
+<h2>🎮 بازی حدس عدد</h2>
+
+<p>یک عدد بین ۱ تا ۱۰۰ وارد کن:</p>
+
+<input type="number" id="guess">
+
+<button onclick="checkGuess()">
+حدس بزن
+</button>
+
+<p id="result"></p>
+
+<hr>
+
+<h2>🎮 سنگ، کاغذ، قیچی</h2>
+
+<button onclick="play('سنگ')">✊ سنگ</button>
+
+<button onclick="play('کاغذ')">✋ کاغذ</button>
+
+<button onclick="play('قیچی')">✌️ قیچی</button>
+
+<p id="gameResult"></p>
+<p id="score"></p>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 TAHA - تمامی حقوق محفوظ است.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+</div>
