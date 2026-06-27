@@ -197,3 +197,43 @@ header,.card{
 body{
     overflow-x: hidden;
 }
+.hero{
+
+    height:90vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    background:linear-gradient(
+    135deg,
+    #0f172a,
+    #1e293b,
+    #0b1220
+    );
+
+}
+
+.hero h1{
+
+    font-size:70px;
+
+    color:#38bdf8;
+
+    margin-bottom:15px;
+
+}
+
+.hero p{
+
+    font-size:24px;
+
+    color:#ddd;
+
+    margin-bottom:30px;
+
+}
